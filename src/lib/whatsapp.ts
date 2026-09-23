@@ -44,7 +44,7 @@ export const orderMessage = (name: string, tag: string, price: number): string =
     `💊 ${name} (${tag})`,
     `💰 ₹${price}/-`,
     ``,
-    `Please share availability & delivery details for my city.`,
+    `Please share availability & payment process.`,
   ].join("\n");
 };
 
