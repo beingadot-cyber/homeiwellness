@@ -108,7 +108,11 @@ export default function Navbar() {
                 <motion.a
                   key={l.href}
                   href={l.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(false);
+                    document.querySelector(l.href)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
                   initial={{ opacity: 0, x: -18 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.05 * i }}
