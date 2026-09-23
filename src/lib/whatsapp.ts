@@ -16,94 +16,43 @@ export interface ConsultData {
   message: string;
 }
 
-const BAR = "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬";
-const pad = (label: string) => label.padEnd(9, " ");
-
-/** Builds the master consultation message — aligned & alive. */
+/** Builds the master consultation message — short & to the point. */
 export const consultMessage = (d: ConsultData): string => {
-  const details = [
-    `👤 ${pad("Name")}: ${d.name || "—"}`,
-    `📞 ${pad("Mobile")}: ${d.phone || "—"}`,
-    `🏙️ ${pad("City")}: ${d.city || "—"}`,
-    `💊 ${pad("Remedy")}: ${d.product || "Not sure yet"}`,
-  ].join("\n");
-
   return [
-    `🕉️ *॥ जय श्री राम ॥* 🕉️`,
-    `*${BRAND}* — _Sanatan Healing, Modern Care_`,
+    `🙏 *${BRAND}* — Namaste!`,
+    `I'd like to book a *FREE Consultation*.`,
     ``,
-    `${BAR}`,
-    `📋  *NEW CONSULTATION REQUEST*`,
-    `${BAR}`,
+    `👤 Name: ${d.name || "—"}`,
+    `📞 Mobile: ${d.phone || "—"}`,
+    `🏙️ City: ${d.city || "—"}`,
+    `💊 Remedy: ${d.product || "Not sure yet"}`,
+    `⏰ Best time to call: ${d.time || "Anytime"}`,
     ``,
-    `🙏 *Namaste Ji!*`,
-    `I visited your website & would love to book a`,
-    `*FREE Health Consultation* with your expert.`,
-    ``,
-    `\`\`\`${details}\`\`\``,
-    `⏰ *Best Time to Call:* ${d.time || "Anytime"}`,
-    ``,
-    `🌿 *My Health Concern*`,
-    `❝ ${d.concern || "General wellness guidance"} ❞`,
-    ``,
-    `💬 *Message for the Doctor*`,
-    `_${d.message || "Please guide me towards natural healing."}_`,
-    ``,
-    `${BAR}`,
-    `🙏 *Dhanyavaad!* Awaiting your kind reply.`,
-    `❝ _आरोग्यम् परमं भाग्यम्_ ❞`,
-    `_Health is the greatest fortune._ ✨`,
-    ``,
-    `🌐 _Sent with devotion from the_`,
-    `_${BRAND} website_ 🌿`,
-  ].join("\n");
+    `🌿 Concern: ${d.concern || "General wellness guidance"}`,
+    d.message ? `📝 ${d.message}` : ``,
+  ]
+    .filter(Boolean)
+    .join("\n");
 };
 
 /** Product quick-order message. */
 export const orderMessage = (name: string, tag: string, price: number): string => {
-  const details = [
-    `💊 ${pad("Remedy")}: ${name}`,
-    `🌿 ${pad("For")}: ${tag}`,
-    `💰 ${pad("Price")}: ₹${price} /-`,
-  ].join("\n");
-
   return [
-    `🕉️ *॥ जय श्री राम ॥* 🕉️`,
-    `*${BRAND}* — _Sanatan Healing, Modern Care_`,
+    `🙏 *${BRAND}* — Namaste!`,
+    `I'd like to order:`,
     ``,
-    `${BAR}`,
-    `🛒  *REMEDY ORDER REQUEST*`,
-    `${BAR}`,
+    `💊 ${name} (${tag})`,
+    `💰 ₹${price}/-`,
     ``,
-    `🙏 *Namaste Ji!*`,
-    `I wish to order the following remedy:`,
-    ``,
-    `\`\`\`${details}\`\`\``,
-    ``,
-    `📦 Kindly share *availability*, *dosage* &`,
-    `*delivery details* for my city.`,
-    ``,
-    `${BAR}`,
-    `🙏 *Dhanyavaad!*`,
-    `❝ _सर्वे सन्तु निरामयाः_ ❞`,
-    `_May all be free from disease._ ✨`,
-    ``,
-    `🌐 _Sent from the ${BRAND} website_ 🌿`,
+    `Please share availability & delivery details for my city.`,
   ].join("\n");
 };
 
 /** Generic greeting for floating button / quick CTAs. */
 export const greetingMessage = (): string =>
   [
-    `🙏 *Namaste ${BRAND} Ji!*`,
-    ``,
-    `I just visited your website & I am truly impressed`,
-    `by your *Sanatan homeopathic remedies*. 🌿`,
-    ``,
-    `I would like to book a *FREE Consultation* and`,
-    `understand which remedy suits my health best.`,
-    ``,
-    `Kindly guide me. *Dhanyavaad!* 🕉️✨`,
+    `🙏 *Namaste ${BRAND}!*`,
+    `I'd like to book a *FREE Consultation* and find the right remedy for me.`,
   ].join("\n");
 
 /** Renders a WhatsApp-formatted string (*bold*, _italic_, ```mono```) to JSX-ready parts */
