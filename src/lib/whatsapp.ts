@@ -1,6 +1,6 @@
-export const WA_NUMBER = "919090909090";
-export const PHONE_DISPLAY = "+91 90909 09090";
-export const PHONE_LINK = "tel:+919090909090";
+export const WA_NUMBER = "919099438203";
+export const PHONE_DISPLAY = "+91 90994 38203";
+export const PHONE_LINK = "tel:+919099438203";
 export const BRAND = "HOMEI WELLNESS";
 
 export const waMe = (message: string) =>
