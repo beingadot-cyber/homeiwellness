@@ -156,7 +156,7 @@ export default function Footer() {
         {/* bottom bar */}
         <div className="flex flex-col items-center justify-between gap-3 border-t border-cream/10 py-6 text-center sm:flex-row sm:text-left">
           <p className="text-xs text-cream/45">
-            © {new Date().getFullYear()} HOMEI Wellness Clinic. All rights reserved. Made with devotion in Bharat.
+            © {new Date().getFullYear()} HOMEI Wellness. All rights reserved. Made with devotion in Bharat.
           </p>
           <p className="flex items-center gap-2 text-xs text-cream/45">
             <span className="font-dev text-gold-500">॥</span>

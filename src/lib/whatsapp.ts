@@ -1,7 +1,7 @@
 export const WA_NUMBER = "919090909090";
 export const PHONE_DISPLAY = "+91 90909 09090";
 export const PHONE_LINK = "tel:+919090909090";
-export const BRAND = "HOMEI WELLNESS CLINIC";
+export const BRAND = "HOMEI WELLNESS";
 
 export const waMe = (message: string) =>
   `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;

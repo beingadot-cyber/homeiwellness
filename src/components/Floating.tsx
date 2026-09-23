@@ -39,7 +39,7 @@ export default function Floating() {
                   राम
                 </span>
                 <div className="leading-tight">
-                  <p className="text-sm font-bold text-white">HOMEI Wellness Clinic</p>
+                  <p className="text-sm font-bold text-white">HOMEI Wellness</p>
                   <p className="text-[11px] text-cream/80">online · replies instantly</p>
                 </div>
                 <button onClick={() => setOpenChat(false)} className="ml-auto text-cream/70 hover:text-white">

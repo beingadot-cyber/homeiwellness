@@ -87,7 +87,7 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-maroon-700/85 sm:text-lg">
-              For over a decade, <span className="font-bold text-maroon-900">HOMEI Wellness Clinic</span> has
+              For over a decade, <span className="font-bold text-maroon-900">HOMEI Wellness</span> has
               carried forward the healing torch of our rishis — blending classical homeopathy with the
               timeless wisdom of Sanatan traditions. Each remedy is a sankalp: to heal gently, completely,
               and forever.

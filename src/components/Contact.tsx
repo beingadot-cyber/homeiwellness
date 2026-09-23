@@ -446,7 +446,7 @@ export default function Contact() {
                             राम
                           </span>
                           <div className="flex-1 leading-tight">
-                            <p className="text-[13px] font-bold text-[#e9edef]">HOMEI Wellness Clinic</p>
+                            <p className="text-[13px] font-bold text-[#e9edef]">HOMEI Wellness</p>
                             <p className="text-[10.5px] text-[#8696a0]">
                               <span className="text-[#25D366]">● online</span> · typically replies instantly
                             </p>
