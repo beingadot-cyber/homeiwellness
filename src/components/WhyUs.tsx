@@ -63,7 +63,7 @@ export default function WhyUs() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Why Choose Homei Wellness"
+          eyebrow="Why Homei Wellness"
           title={
             <>
               Healing with <span className="text-gold-grad">Maryada</span> & Love
