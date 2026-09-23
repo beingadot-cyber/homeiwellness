@@ -118,6 +118,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 88px;
   }
   body {
     @apply bg-cream text-maroon-900 font-sans antialiased;
