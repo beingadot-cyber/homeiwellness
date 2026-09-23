@@ -84,13 +84,10 @@ export default function Products() {
                         <p className="font-display text-2xl font-black text-gold-grad">
                           ₹{p.price}
                           <span className="ml-2 align-middle text-sm font-medium text-cream/40 line-through">
-                            ₹{p.mrp}
+                            {p.mrp}
                           </span>
                         </p>
                       </div>
-                      <span className="rounded-lg bg-jungle/60 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-green-300 ring-1 ring-green-400/30">
-                        {Math.round(((p.mrp - p.price) / p.mrp) * 100)}% Off
-                      </span>
                     </div>
 
                     <a
