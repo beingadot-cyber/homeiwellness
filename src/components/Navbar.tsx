@@ -44,7 +44,7 @@ export default function Navbar() {
               HOMEI
             </span>
             <span className="mt-1 block text-[9px] font-bold uppercase tracking-[0.42em] text-gold-300">
-              Wellness Clinic
+              Wellness
             </span>
           </span>
         </a>
