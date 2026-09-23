@@ -62,9 +62,8 @@ export default function Footer() {
             <p className="mt-4 font-dev text-lg text-gold-300">॥ सर्वे सन्तु निरामयाः ॥</p>
             <div className="mt-6 flex gap-3">
               {[
-                { icon: InstagramIcon, href: "https://instagram.com" },
-                { icon: FacebookIcon, href: "https://facebook.com" },
-                { icon: YoutubeIcon, href: "https://youtube.com" },
+                { icon: InstagramIcon, href: "https://www.instagram.com/homeiwellness/" },
+                { icon: FacebookIcon, href: "https://www.facebook.com/share/19hvXC7ns1/" },
                 { icon: MessageCircle, href: waMe(greetingMessage()) },
               ].map((s, i) => (
                 <a
