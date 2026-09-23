@@ -51,7 +51,7 @@ export default function Footer() {
               <span>
                 <span className="block font-display text-2xl font-black text-cream">HOMEI</span>
                 <span className="block text-[9px] font-bold uppercase tracking-[0.42em] text-gold-400">
-                  Wellness Clinic
+                  Wellness
                 </span>
               </span>
             </a>
