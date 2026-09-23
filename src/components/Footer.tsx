@@ -134,7 +134,7 @@ export default function Footer() {
                 <Phone className="size-3.5" /> Call / WhatsApp
               </p>
               <p className="mt-1.5 font-display text-2xl font-black text-cream">{PHONE_DISPLAY}</p>
-              <p className="mt-1 text-[11px] text-cream/50">Mon–Sat · 9 AM – 8 PM · All India</p>
+              <p className="mt-1 text-[11px] text-cream/50">Everyday · 9:31 AM – 5:31 PM · All India</p>
             </a>
             <a
               href={waMe(greetingMessage())}
