@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Brand */}
         <a href="#home" className="group flex items-center gap-3">
           <span className="relative grid size-11 place-items-center rounded-2xl bg-gradient-to-br from-saffron-400 via-saffron-500 to-ember-600 shadow-[0_8px_24px_-6px_rgba(245,118,11,0.7)] ring-1 ring-gold-300/60 transition-transform duration-500 group-hover:rotate-6">
-            <span className="font-dev text-base font-bold leading-none text-cream drop-shadow">ॐ</span>
+            <img src="/logo.png" alt="HOMEI Wellness" className="h-6 w-6 object-contain" />
             <span className="absolute inset-0 rounded-2xl ring-2 ring-gold-300/0 transition group-hover:ring-gold-300/60" />
           </span>
           <span className="leading-none">
