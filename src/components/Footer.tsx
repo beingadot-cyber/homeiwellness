@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <a href="#home" className="flex items-center gap-3">
               <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-saffron-400 via-saffron-500 to-ember-600 shadow-lg ring-1 ring-gold-300/60">
-                <span className="font-dev text-xl font-bold text-cream">ॐ</span>
+                <img src="/logo.png" alt="HOMEI Wellness" className="h-10 w-10 object-contain" />
               </span>
               <span>
                 <span className="block font-display text-2xl font-black text-cream">HOMEI</span>
